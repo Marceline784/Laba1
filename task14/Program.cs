@@ -1,10 +1,18 @@
-﻿namespace task14
+﻿using System;
+internal class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.WriteLine("Enter number: ");
+        int n = int.Parse(Console.ReadLine());
+
+        long factorial = 1;
+
+        for (int i = 2; i <= n; i++)
         {
-            Console.WriteLine("Hello, World!");
+            factorial *= i; 
         }
+
+        Console.WriteLine($"Result = {factorial}");
     }
 }
